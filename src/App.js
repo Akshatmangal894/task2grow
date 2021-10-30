@@ -16,6 +16,7 @@ class App extends Component {
     this.setState({ loading: true });
 
     setTimeout(
+      
       async function () {
         const response = await fetch("https://reqres.in/api/users?page=1");
         const jsonresponse = await response.json();
